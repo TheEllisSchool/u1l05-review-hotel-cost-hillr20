@@ -38,16 +38,19 @@ public class HotelCostnBarGraphs {
 				for (int i = 1; i < (costCen/50); i++) {
 					String stars = " ";
 					stars += "*"; //repeat this in the loop
-				JOptionPane.showMessageDialog(null, stars);
+					JOptionPane.showMessageDialog(null, stars);
+				
 					//System.out.printf("*");
 	        	}
 				for (costClay = 1; costClay < (numNights * cenHotel)/50; costClay++) {
-					System.out.print("*");
+					 JOptionPane.showMessageDialog(null, "*");
+					//System.out.print("*");
 				}
 				for (costFitz = 1; costFitz < numNights; costFitz++)
-					System.out.print("*");
+					 JOptionPane.showMessageDialog(null, "*");
+					//System.out.print("*");
 				}
-			
+				
 		
 			/*while (numNights > 0){
 				int numStar = costCen/50;
