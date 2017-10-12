@@ -26,21 +26,24 @@ public class HotelCostnBarGraphs {
 					
 			
 		JOptionPane.showMessageDialog(null, "You will be staying " + numNights + " nights.");
-		while (numNights > 0) {
-			int costCen = numNights * cenHotel;
-			int costClay = numNights * clayHotel;
-			int costFitz = numNights * fitzHotel;
+			while (numNights > 0) {
+				int costCen = numNights * cenHotel;
+				int costClay = numNights * clayHotel;
+				int costFitz = numNights * fitzHotel;
 			
-			for (costCen = 1; costCen < numNights; costCen++) 
-	        {
-	            System.out.printf("*");
-	         }
-			for (costClay = 1; costClay < numNights; costClay++) {
-				System.out.print("*");
+				for (costCen = 1; costCen > numNights; costCen++) 
+				{
+					JOptionPane.showMessageDialog(null, "*");
+				//System.out.printf("*");
+				}
+				for (costClay = 1; costClay > numNights; costClay++) {
+					JOptionPane.showMessageDialog(null, "*");
+				//System.out.print("*");
+				}
+				for (costFitz = 1; costFitz > numNights; costFitz++)
+					JOptionPane.showMessageDialog(null, "*");
+				//System.out.print("*");
 			}
-			for (costFitz = 1; costFitz < numNights; costFitz++)
-				System.out.print("*");
-		}
 			
 		
 			/*while (numNights > 0){
